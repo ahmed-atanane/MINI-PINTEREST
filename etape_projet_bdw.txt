@@ -1,0 +1,55 @@
+/************************************/
+/************************************/
+/*********** SEMAINE 1 **************/
+/************************************/
+/************************************/
+
+/************************** ETAPE 1 ***************************************************
+1. Création des tables :
+	a. Table Catégorie:
+		CREATE TABLE 
+			Categorie(
+			catId integer, 
+			nomCat varchar(250), 
+			PRIMARY KEY (catId));
+
+	b. Table Photo:
+CREATE TABLE Photo(photoId integer, nomFich varchar(250), description varchar(250), catId integer,
+        PRIMARY KEY (photoID),
+        FOREIGN KEY (catId) REFERENCES Categorie (catId));
+
+Pour mettre en utf8_general_ci : ALTER TABLE `Photo` CHANGE `description` `description` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+Pareil pour nomFich dans cette table et nomCat dans la table 1.
+
+/************************** ETAPE 2 ***************************************************
+2. Création de la première page demandée tout simplement, en html, basique. Utilisation de Wamp pour travailler.
+
+
+/************************** ETAPE 3 ***************************************************
+3. Création du fichier tuplesPhoto.sql
+
+INSERT INTO Categorie (catId, nomCat)
+            VALUES  (1, 'Nom_Catégorie');
+
+etc.
+
+
+/****************************************************************************/
+
+INSERT INTO Photo (photoId, nomFich, description, catId)
+            VALUES  (1, './data/image.jpg', 'Description de l'image', w);
+
+etc.
+
+/************************************/
+/************************************/
+/*********** SEMAINE 2 **************/
+/************************************/
+/************************************/
+
+/************************************/
+/************************************/
+/*********** SEMAINE 3 **************/
+/************************************/
+/************************************/
+	
